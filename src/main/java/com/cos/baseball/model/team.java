@@ -9,8 +9,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class team {
+public class Team {
 	private int id;
 	private int stadiumId;
-	private String teamName;
+	private String teamname;
 }

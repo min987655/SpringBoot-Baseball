@@ -13,13 +13,14 @@ let index={
 //		init 클릭하면 save 실행 됨
 		save: function(){
 			let data = {
-					stadiumname: $("#stadiumname").val()
+					stadiumId : $("#sel").val(),
+					teamname: $("#teamname").val()
 			}
 			console.log(data);
 
 			$.ajax({
 				type: "POST",
-				url: "/stadium/saveProc",
+				url: "/team/saveProc",
 //				json으로 데이터 주고받을거기 때문에 하단  공식임
 //				js 문법 : 자바스트립트 오브젝트를 jsonString으로 바꿔즘
 				data: JSON.stringify(data),
@@ -29,8 +30,8 @@ let index={
 				dataType: "json"
 			}).done(function(resp){
 				if(resp.statusCode == 1) {
-					alert("야구장 등록 성공");
-					location.href="/stadium/list";
+					alert("팀 등록 성공");
+					location.href="/team/list";
 				}
 				console.log(resp);
 			}).fail(function(error){

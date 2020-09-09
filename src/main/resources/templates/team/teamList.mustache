@@ -5,15 +5,17 @@
   <table class="table mt-4">
     <thead class="thead-light">
       <tr>
-        <th>포지션</th>
+        <th>번호</th>
         <th>팀명</th>
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td></td>
-        <td></td>
-      </tr>
+    	{{#teamList}}
+	      <tr>
+	        <td>{{id}}</td>
+	        <td>{{teamname}}</td>
+	      </tr>
+      {{/teamList}}
     </tbody>
   </table>
 </div>

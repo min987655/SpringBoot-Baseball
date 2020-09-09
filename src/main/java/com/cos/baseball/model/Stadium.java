@@ -11,5 +11,5 @@ import lombok.NoArgsConstructor;
 @Builder
 public class Stadium {
 	private int id;
-	private String stadiumName;
+	private String stadiumname;
 }
