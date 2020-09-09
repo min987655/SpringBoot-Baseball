@@ -13,4 +13,5 @@ public class player {
 	private int id;
 	private int teamId;
 	private String playerName;
+	private String position;
 }
